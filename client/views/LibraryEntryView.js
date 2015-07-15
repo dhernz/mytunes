@@ -9,7 +9,7 @@ var LibraryEntryView = Backbone.View.extend({
     'click': function() {
       this.model.play();
       this.model.enqueue();
-    }
+    } // MAY CAUSE PLAY and ENQUEUE TROUBLE WATCH
   },
 
   render: function(){
