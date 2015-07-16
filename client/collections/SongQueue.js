@@ -10,9 +10,6 @@ var SongQueue = Songs.extend({
 
 
 		this.on("ended", function(){
-
-			console.log(this.models[0]);
-			console.log(this.models[1]);
 			this.ended();
 		},this)
 
@@ -23,9 +20,9 @@ var SongQueue = Songs.extend({
 	}, 
 
 	ended: function(){
-		console.log("hi");
-
-		this.models.shift();
-		console.log(this.models[0]);
+		// console.log("songQueue");
+		this.remove(this.at(0));
+		// console.log("songQueue2");
 	}
 });
+

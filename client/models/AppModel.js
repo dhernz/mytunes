@@ -22,6 +22,12 @@ var AppModel = Backbone.Model.extend({
       // console.log(this.get('songQueue').models);
     }, this);
 
+    // params.library.on('ended', function(song){
+    //   this.get('songQueue').models.shift();
+    //   console.log('WHATUP');
+    //   // console.log(this.get('songQueue').models);
+    // }, this);
+
   }
 
 
