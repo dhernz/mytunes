@@ -15,16 +15,19 @@ var SongQueue = Songs.extend({
 		this.on("dequeue", function(){
 			this.dequeue();
 		},this);
+
+		
 	},
 
 	playFirst: function(){
+		// // when playFirst is trigger, check the first element in the SongQueue, and on the model called the play. 
+		// // console.log(this.models);
+		this.at(0).play();
 
 	}, 
 
 	ended: function(){
-		// console.log("songQueue");
 		this.remove(this.at(0));
-		// console.log("songQueue2");
 		if(this.models.length >= 1){
 			this.playFirst(); 
 		}
