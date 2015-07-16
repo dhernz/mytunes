@@ -9,8 +9,10 @@
 3. Library View --- :)
 it was already done.. if it's not broken don't fix it.
 
-4. App  
+4. App  FINITO!	
 5. AppView
+	it was already done.. if it's not broken don't fix it.
+	
 6. SongQueue
 7. SongQueueView
 8. PlayerView
